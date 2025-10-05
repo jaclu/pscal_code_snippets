@@ -1,4 +1,11 @@
 #!/bin/sh
+#
+#  Part of https://github.com/jaclu/pscal_code_snippets
+#
+#  License: MIT
+#
+#  Testing various posix looping methods
+#
 
 func_header() {
     echo
