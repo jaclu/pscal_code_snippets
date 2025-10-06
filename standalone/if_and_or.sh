@@ -16,4 +16,9 @@ if [ -d /proc/ish ] || [ -n "$TERMUX_VERSION" ]; then
 fi
 
 
+if [ ! -d /proc/ish ] && [ -z "$TERMUX_VERSION" ]; then
+    echo "Neiher iSH or Termux"
+fi
+
+
 echo "Done!"
