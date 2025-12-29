@@ -12,7 +12,6 @@ func_header() {
     echo "===  $1  ==="
 }
 
-
 loop_over_items_ifs() {
     func_header "loop_over_items_ifs()"
     items="foo_1,foo_2,foo_3"
@@ -44,18 +43,18 @@ primitive_loop() {
     sep=":"
     items="$PATH"
     while :; do
-	case $items in
+        case $items in
             *"$sep"*)
-		item=${items%%"$sep"*}
-		items=${items#*"$sep"}
-		;;
+                item=${items%%"$sep"*}
+                items=${items#*"$sep"}
+                ;;
             *)
-		item=$items
-		items=
-		;;
-	esac
-	printf 'Item: [%s]\n' "$item"
-	[ -z "$items" ] && break
+                item=$items
+                items=
+                ;;
+        esac
+        printf 'Item: [%s]\n' "$item"
+        [ -z "$items" ] && break
     done
 }
 

@@ -1,6 +1,5 @@
 #!/bin/sh
 
-
 # exsh complains about Unable to open ...
 # for bins that should be ignored in the current env
 # In this case running this on a non-iSH node
